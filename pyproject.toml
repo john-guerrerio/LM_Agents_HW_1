@@ -1,0 +1,24 @@
+[project]
+name = "lm-agents-hw-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "John Guerrerio", email = "johnjguerrerio@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.1",
+    "iprogress>=0.4",
+    "ipywidgets>=8.1.9",
+    "matplotlib>=3.11.1",
+    "peft>=0.20.0",
+    "stopwatch-py>=2.0.1",
+]
+
+[project.scripts]
+lm-agents-hw-1 = "lm_agents_hw_1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
