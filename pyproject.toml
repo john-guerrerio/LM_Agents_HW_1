@@ -6,14 +6,15 @@ readme = "README.md"
 authors = [
     { name = "John Guerrerio", email = "johnjguerrerio@gmail.com" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "datasets>=5.0.1",
     "iprogress>=0.4",
-    "ipywidgets>=8.1.9",
-    "matplotlib>=3.11.1",
-    "peft>=0.20.0",
-    "stopwatch-py>=2.0.1",
+    "matplotlib>=3.11.2",
+    "peft>=0.21.0",
+    "tqdm>=4.70.1",
+    "transformers>=5.17.0",
+    "vllm>=0.30.0",
 ]
 
 [project.scripts]
@@ -22,3 +23,6 @@ lm-agents-hw-1 = "lm_agents_hw_1:main"
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv]
+package = false
